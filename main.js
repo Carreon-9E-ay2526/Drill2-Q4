@@ -1,6 +1,6 @@
 function getheatindex() {
     let temp = document.getElementById("heatt").value;
-    let hum = document.getElementById("khour").value;
+    let hum = document.getElementById("hum").value;
 
     temp = Number(temp);
     hum = Number(hum);
@@ -10,7 +10,7 @@ function getheatindex() {
         return;
     }
 
-    let heatIn = temp + (0.33 * hum) - 4;
+    let heatIndex = temp + (0.33 * hum) - 4;
 
     let category = "";
     let status = "";
